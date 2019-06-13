@@ -35,7 +35,7 @@ class App:
             self.all_cameras = list(map(lambda x: x[-1], output.splitlines()))
 
         self.current_option = StringVar(self.root)
-        self.current_option.set(self.all_cameras[1])
+        self.current_option.set(self.all_cameras[2])
         self.popup_menu = OptionMenu(self.mainframe, self.current_option, *self.all_cameras)
 
         Label(self.mainframe, text="Choose a camera").grid(row=0, column=10, sticky=E)
